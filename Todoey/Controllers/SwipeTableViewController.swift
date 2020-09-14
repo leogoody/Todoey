@@ -29,11 +29,11 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
         guard orientation == .right else { return nil }
         
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
-            // handle action by updating model with deletion
+            // Handle action by updating model with deletion
             self.updateModel(at: indexPath)
         }
         
-        // customize the action appearance
+        // Customize the action appearance
         deleteAction.image = UIImage(named: "delete-icon")
         
         return [deleteAction]

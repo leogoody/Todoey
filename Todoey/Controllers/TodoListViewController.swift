@@ -39,11 +39,6 @@ class TodoListViewController: SwipeTableViewController {
         if let item = todoItems?[indexPath.row] {
             cell.textLabel?.text = item.title
             cell.accessoryType = item.done ? .checkmark : .none
-            //        if item.done == true {
-            //            cell.accessoryType = .checkmark
-            //        } else {
-            //            cell.accessoryType = .none
-            //        }
         } else {
             cell.textLabel?.text = "No Items added"
         }
